@@ -9,6 +9,7 @@ Structure description:
 
 - **cmake_language_examples**:
     This directory contains simple CMake scripts that can be executed using "cmake -P <script_name>"
+    This is the basic information one should know before writting cmake scripts.
 
 - **packages**: 
     Contains two CMake projects **package1** and **package2**.
