@@ -1,4 +1,4 @@
-# Looping through a list
+# Looping through a list of files
 
 SET(TEST t1.c t2.c t3.c)
 
