@@ -1,22 +1,18 @@
 # cmake_examples
-This is a repo used by me to test different cmake features
+This repo provides the following CMake examples:
+    - cmake basic language features
+    - cmake package based builds examples
 
 Structure description:
 
-- **component1**:
-    This illustrates an example describing how to install a package with CMake and prepare it for further usage 
+- **cmake_language_examples**:
+    This directory contains simple CMake scripts that can be executed using "cmake -P <script_name>"
 
-- **component2**: 
-    Simple component used in the master CMakeLists.txt file
+- **packages**: 
+    Contains two CMake projects **package1** and **package2**.
+    These CMake projects will be consumed by **packages_consumers** as CMake packages using find_package functionality (and add_subdirectory)
 
-- **component3**:
-    This is just a CMake language script. It could have been replaced by a cmake script. (cmake -P <script_location>) but in that situation CMake context is lost.
-
-- **component4**:
-    This is an example for CMake cross compilation. The important part here is to use "cmake -G"MinGW Makefiles" -DCMAKE_TOOLCHAIN_FILE="D:\personal_projects\cmake_examples\component4\Toolchain-diab.cmake" . -Bbuild --debug-output" to build. Env variables for license file and the compiler at the specified location are a prerequisite.
-
-- **Master CMakeLists.txt file**:
-    This uses component1 artifacts with find_package functionality of CMake.
-
-- **test.cmake**:
-    This is a cmake test script and can be executed with "cmake -P test.cmake"
+- **packages_consumers**:
+    Consumes packages provided in **packages** directory.
+    It consumes **package1** using find_package functionality
+    It consumes **package2** using add_subdirectory functionality
