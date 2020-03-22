@@ -1,7 +1,7 @@
 # cmake_examples
 This repo provides the following CMake examples:
-    - cmake basic language features
-    - cmake package based builds examples
+- cmake basic language features
+- cmake package based builds examples
 
 Structure description:
 
@@ -10,6 +10,7 @@ Structure description:
 
 - **packages**: 
     Contains two CMake projects **package1** and **package2**.
+    
     These CMake projects will be consumed by **packages_consumers** as CMake packages using find_package functionality (and add_subdirectory)
 
 - **packages_consumers**:
