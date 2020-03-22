@@ -1,2 +1,2 @@
-message(STATUS "Found component1")
-include(package1/package1_export/lib/PACKAGE1.cmake)
+message(STATUS "Found package1")
+include(packages/package1/package1_export/lib/PACKAGE1.cmake)
